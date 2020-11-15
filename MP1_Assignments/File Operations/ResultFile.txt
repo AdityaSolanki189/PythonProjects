@@ -1,0 +1,6 @@
+Length Of The String Is : 37
+Number Of Vowels In The String Is : 11
+Number Of Words In The String Is : 6
+Number Of Characters In The String Is : 30
+Number Of White Spaces In The String Is : 5
+Number Of Special Characters In The String Is : 2
