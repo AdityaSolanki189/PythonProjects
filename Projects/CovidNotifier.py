@@ -19,9 +19,9 @@ date = obj.find("div", {"class": "news_date"}).h4.text
 # req win10 notifier
 notifier = ToastNotifier()
 message2 = "Corona Cases : "+total_cases
-notifier.show_toast(title=date, msg=message2, duration=5, icon_path=r"C:\Users\adity\Documents\Python_Learning\Python-Projects\Projects\india.ico")
+notifier.show_toast(title=date, msg=message2, duration=5, icon_path=r"C:\Users\adity\Documents\Python_Learning\PythonProjects\Projects\india.ico")
 
 time.sleep(1)
 
 message = "New Cases : "+new_cases+"\nNew Deaths : "+new_deaths
-notifier.show_toast(title = "COVID-19 Update",msg = message,duration=5,icon_path=r"C:\Users\adity\Documents\Python_Learning\Python-Projects\Projects\covid19.ico")
+notifier.show_toast(title = "COVID-19 Update",msg = message,duration=5,icon_path=r"C:\Users\adity\Documents\Python_Learning\PythonProjects\Projects\covid19.ico")
