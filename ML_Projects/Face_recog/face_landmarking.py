@@ -1,6 +1,7 @@
 import cv2
 import dlib
-
+#dlib is better than harcascade, as it uses deeplearning. 
+#so even when you tilt face or cover partial face, it will be able to recognise
 detector = dlib.get_frontal_face_detector()
 
 cap = cv2.VideoCapture(0)
