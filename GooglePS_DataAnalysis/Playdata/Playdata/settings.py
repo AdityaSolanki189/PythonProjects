@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'i3-#d^rm14kv7jy_n3txfo##10voo5m#^^$f0gckmvf@#dhu(z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['miniproject-google-playdata.herokuapp.com', '127.0.0.1']
 
