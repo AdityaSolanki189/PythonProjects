@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us
+{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px=0 mb-2">
+<img src="static/images/contact.jpg" class="d-block w-100" alt="...">
+</div>
+
+<div class="container py-4">
+    <h2 class="text-center">Contact Us</h2>
+    <form method="post" action="/contact">
+    {% csrf_token %}
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.68101724563!2d73.72287834853687!3d18.52489042244045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1607587668961!5m2!1sen!2sin" width="1125" height="250" frameborder="1" style="border:1;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="form-group">
+            <label for="name">NAME</label>
+            <input type="name" class="form-control" id="name" name="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email">EMAIL</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Phone/Mobile Number">
+        </div>
+
+        <div class="form-group">
+            <label for="desc">YOUR MESSAGE</label>
+            <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    
+</div>
+
+{% endblock body %}

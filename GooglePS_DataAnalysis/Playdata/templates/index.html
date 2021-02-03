@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+
+{% block title %}HOME
+{% endblock title %}
+
+{% block body %} 
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/images/p2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block badge-pill" style="background: black">
+        <h5>You can have data without information, but you cannot have information without data.</h5>
+        <p>-Daniel Keys Moran</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/p3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block badge-pill" style="background: black">
+        <h5>Where there is data smoke, there is business fire.</h5>
+        <p>-Thomas Redman</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/p4.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block badge-pill" style="background: black">
+        <h5>Errors using inadequate data are much less than those using no data at all.</h5>
+        <p>-Charles Babbage</p>
+      </div>
+    </div>
+    
+    <div class="carousel-item">
+      <img src="static/images/p1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block badge-pill" style="background: black" rounded-pill>
+        <h5>Data really powers everything that we do.</h5>
+        <p>-Jeff Weiner</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div class="container my-4">
+  <h1 class="my-2 text-center">Play Store Data</h1>
+  <marquee direction="left" class="text-danger"><strong><em>Latest Playstore Data at your fingertips</em></strong></marquee>
+    
+    
+    <div class="card border-secondary" style="width:100%">
+      <div class="card-header"><h3><strong>Android Market Breakdown</strong></h3></div>
+        <img src="static/images/g1.jpg" class="card-img-top" alt="...">
+      <div class="card-footer bg-transparent border-secondary"><h6><strong><em>Family and Game apps have the highest market prevalence.<br> Interestingly, tools, business, and medical apps are also catching up</em></strong></h6></div>
+    </div>
+</div>
+<!--2nd block-->
+<div class="container my-4">
+    <div class="card border-secondary" style="width:100%">
+      <div class="card-header"><h3><strong></strong></h3></div>
+        <img src="static/images/g2.png" class="card-img-top" alt="...">
+      <div class="card-footer bg-transparent border-secondary"><h6><strong><em>This is the basic exploratory analysis to look for any evident patterns or relationships between the features.</em></strong></h6></div>
+    </div>
+</div>
+<!--3rd block-->
+<div class="container my-4">
+    <div class="card border-secondary" style="width:100%">
+      <div class="card-header"><h3><strong>Average rating of apps</strong></h3></div>
+        <img src="static/images/g3.png" class="card-img-top" alt="...">
+      <div class="card-footer bg-transparent border-secondary"><h6><strong><em>Generally, most apps do well with an average rating of 4.17.</em></strong></h6></div>
+    </div>
+</div>
+<!--4th block-->
+<div class="container my-4">
+    <div class="card border-secondary" style="width:100%">
+      <div class="card-header"><h3><strong>App ratings across categories</strong></h3></div>
+        <img src="static/images/g4.png" class="card-img-top" alt="...">
+        <img src="static/images/g4-1.png">
+      <div class="card-footer bg-transparent border-secondary"><h6><strong><em>The average app ratings across categories is significantly different.</em></strong></h6></div>
+    </div>
+</div>
+<!--5th block-->
+<div class="container my-4">
+    <div class="card border-secondary" style="width:100%">
+      <div class="card-header"><h3><strong>Header</strong></h3></div>
+        <img src="static/images/g5.png" class="card-img-top" alt="...">
+      <div class="card-footer bg-transparent border-secondary"><h6><strong><em>-> Almost all app categories perform decently. Health and Fitness and Books and Reference produce the highest quality apps with 50% apps having a rating greater than 4.5. This is extremely high!<br>
+-> On the contrary, 50% of apps in the Dating category have a rating lesser than the average rating.<br>
+-> A few junk apps also exist in the Lifestyle, Family and Finance category.
+</em></strong></h6></div>
+    </div>
+</div>
+<!--6th block-->
+<div class="container my-4">
+    <div class="card border-secondary" style="width:100%">
+      <div class="card-header"><h3><strong>Rating vs Size</strong></h3></div>
+        <img src="static/images/g6.png" class="card-img-top" alt="...">
+      <div class="card-footer bg-transparent border-secondary"><h6><strong><em>Most bulky apps (>50MB) belong to the Game and Family category. Despite this, these bulky apps are fairly highly rated indicating that they are bulky for a purpose.</em></strong></h6></div>
+    </div>
+</div>
+<!--7th block-->
+<div class="container my-4">
+    <div class="card border-secondary" style="width:100%">
+      <div class="card-header"><h3><strong>Ratio of paid and free apps</strong></h3></div>
+        <img src="static/images/g7.png" class="card-img-top" alt="...">
+      <div class="card-footer bg-transparent border-secondary"><h6><strong><em>Footer</em></strong></h6></div>
+    </div>
+</div>
+<!--8th block-->
+<div class="container my-4">
+    <div class="card border-secondary" style="width:100%">
+      <div class="card-header"><h3><strong>Number of Reviews Vs Number of Downloads (Log scaled)</strong></h3></div>
+        <img src="static/images/g8.png" class="card-img-top" alt="...">
+      <div class="card-footer bg-transparent border-secondary"><h6><strong><em>->A moderate positive correlation of 0.63 exists between the number of reviews and number of downloads. This means that customers tend to download a given app more if it has been reviewed by a larger number of people.
+        <br>->This also means that many active users who download an app usually also leave back a review or feedback.
+          <br>->So, getting your app reviewed by more people maybe a good idea to increase your app's capture in the market!
+</em></strong></h6></div>
+    </div>
+</div>
+<!--9th block-->
+<div class="container my-4">
+    <div class="card border-secondary" style="width:100%">
+      <div class="card-header"><h3><strong>Sentiment Analysis</strong></h3></div>
+        <img src="static/images/g10.png" class="card-img-top" alt="...">
+      <div class="card-footer bg-transparent border-secondary"><h6><strong><em>Health and Fitness apps perform the best, having more than 85% positive reviews.
+On the contrary, many Game and Social apps perform bad leading to 50% positive and 50% negative.
+</em></strong></h6></div>
+    </div>
+</div>
+
+
+<div class="album py-5 bg-light">
+    <div class="container">
+      <!--10th block-->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+          <div class="card shadow-sm">
+            <img src="static/images/g9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><h6><strong><em>Rating vs Last update(days ago) 
+                  </em></strong></h6></p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <!--11th block-->
+      <div class="col">
+          <div class="card shadow-sm">
+          <div class="card-header"><h4><strong>A quick look on reviews#1</strong></h4></div>
+            <img src="static/images/g11.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><h6><strong><em>FREE APPS
+                  <br>Negative words: ads, bad, hate
+                  <br>Positive words: good, love, best, great 
+                  </em></strong></h6></p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--12th block-->
+        <div class="col">
+          <div class="card shadow-sm">
+          <div class="card-header"><h4><strong>A quick look on reviews#2</strong></h4></div>
+            <img src="static/images/g12.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><h6><strong><em>PAID APPS 
+                  <br>Negative words: malware, problem
+                  <br>Positive words: great, love, easy 
+                  </em></strong></h6></p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+{% endblock body %}
