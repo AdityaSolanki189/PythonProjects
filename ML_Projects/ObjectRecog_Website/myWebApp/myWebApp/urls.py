@@ -19,6 +19,6 @@ from django.urls import path
 from django.urls.conf import include
 
 urlpatterns = [
-    url(r'imageUpload',include('imgUpload.urls')),
+    url(r'imageupload',include('imgUpload.urls')),
     url(r'admin/', admin.site.urls),
 ]
