@@ -20,5 +20,5 @@ from django.urls.conf import include
 
 urlpatterns = [
     url(r'imageUpload',include('imgUpload.urls')),
-    path('admin/', admin.site.urls),
+    url(r'admin/', admin.site.urls),
 ]
